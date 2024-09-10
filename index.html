@@ -45,10 +45,20 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
   <script>
-    document.getElementById('notifyForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      document.getElementById('notifyMessage').classList.remove('hidden');
-    });
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the current URL path and search (query) parameters
+            const currentPath = window.location.pathname;
+            const currentSearch = window.location.search;
+
+            // Define the new domain where you want to redirect
+            const newDomain = "https://asia-northeast1-fan-project-dev-424906.cloudfunctions.net";
+
+            // Construct the new URL
+            const newUrl = newDomain + currentPath + currentSearch;
+
+            // Redirect to the new URL
+            window.location.href = newUrl;
+        });
   </script>
 </body>
 </html>
