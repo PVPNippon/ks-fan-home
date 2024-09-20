@@ -37,7 +37,7 @@
 <body class="bg-gray-900 text-white">
 
   <!-- Header -->
-  <header class="bg-gray-800 p-4">
+  <header id="site-header" class="bg-gray-800 p-4">
     <nav class="container mx-auto flex justify-between items-center">
       <a href="index.html" class="text-white text-lg font-bold">Home</a>
       <div x-data="{ open: false }" class="relative">
@@ -280,5 +280,21 @@
 </p>
   </div>
 
+
+  <script>
+     document.addEventListener("DOMContentLoaded", function() {
+    // Check if the page is loaded in an iframe
+    if (window.self !== window.top) {
+      // Hide the header if inside an iframe
+      document.getElementById('site-header').style.display = 'none';
+    } else {
+      // Check if the page is accessed via GitHub Pages
+      if (!window.location.href.includes("github.io")) {
+        // Hide the header if not on GitHub Pages
+        document.getElementById('site-header').style.display = 'none';
+      }
+    }
+  });
+  </script>
 </body>
 </html>
