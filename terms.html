@@ -36,5 +36,22 @@
 
   </main>
 
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+   // Check if the page is loaded in an iframe
+   if (window.self !== window.top) {
+     // Hide the header if inside an iframe
+     document.getElementById('site-header').style.display = 'none';
+   } else {
+     // Check if the page is accessed via GitHub Pages
+     if (!window.location.href.includes("github.io")) {
+       // Hide the header if not on GitHub Pages
+       document.getElementById('site-header').style.display = 'none';
+     }
+   }
+ });
+ </script>
 </body>
 </html>
