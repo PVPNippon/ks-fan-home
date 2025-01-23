@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - English</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+    }
+    h1, h2, h3 {
+        color: #111;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    h3 {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    p {
+        margin: 10px 0;
+    }
+    ul {
+        margin: 10px 0 10px 20px;
+    }
+</style>
+</head>
+<body class="text-gray-800">
+
+  <!-- Header -->
+  <header id="site-header"  class="bg-gray-800 p-4">
+    <nav class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-white text-lg font-bold">Home</a>
+      <div x-data="{ open: false }" class="relative">
+        <label @click="open = !open" class="text-white px-4 hover:underline cursor-pointer flex items-center">
+          Privacy Policy
+          <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.293 9.293a1 1 0 011.414 0L10 10.586l1.293-1.293a1 1 0 111.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path>
+          </svg>
+        </label>
+        <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 bg-gray-700 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-10">
+          <a href="privacy_policy_en.html" class="block px-4 py-2 text-white hover:bg-gray-600">EN</a>
+          <a href="priv_admin_addendum_en.html" class="block px-4 py-2 text-white hover:bg-gray-600">Admin Addendum - EN</a>
+          <a href="privacy_policy_jp.html" class="block px-4 py-2 text-white hover:bg-gray-600">JP</a>
+          <a href="priv_admin_addendum_jp.html" class="block px-4 py-2 text-white hover:bg-gray-600">Admin Addendum - JP</a>
+        </div>
+      </div>
+      <div x-data="{ open: false }" class="relative">
+        <label @click="open = !open" class="text-white px-4 hover:underline cursor-pointer flex items-center">
+          Terms & Conditions
+          <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.293 9.293a1 1 0 011.414 0L10 10.586l1.293-1.293a1 1 0 111.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path>
+          </svg>
+        </label>
+        <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 bg-gray-700 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-10">
+          <a href="terms_en.html" class="block px-4 py-2 text-white hover:bg-gray-600">EN</a>          
+          <a href="terms_jp.html" class="block px-4 py-2 text-white hover:bg-gray-600">JP</a>          
+        </div>
+      </div>
+      
+    </nav>
+  </header>
+
+  <div class="container mx-auto p-6">
+    <h1>Kelly SIMONZ Official Fan Club</h1>
+    <h2>Application Privacy Policy Addendum</h2>
+    
+    <h2>Article 1 (Definitions)</h2>
+    <p>
+        This Privacy Policy Addendum (hereinafter referred to as “This Addendum”) is a supplement to the main Privacy Policy of the Kelly SIMONZ Official Fan Club application and applies specifically to the Administrators (hereinafter referred to as “Admin”) of the Kelly SIMONZ Official Fan Club application (hereinafter referred to as “This Application”) and the services related to This Application (hereinafter referred to as This Service). This Addendum outlines the types of data collected from Admins, the purposes of such collection, and how this data is processed and shared to provide This Service effectively. By using This Application as an Admin, you agree to the collection, use, and disclosure of your information as described in this Addendum.
+    </p>
+    <p>
+        This Addendum should be read in conjunction with the main Privacy Policy available at [link]. Where there are discrepancies, the terms outlined in this Addendum will prevail for Admins.
+    </p>
+    
+    <h2>Article 2 (Additional Information we collect and how do we use them)</h2>
+    <p>
+        As an Admin of This Application, we collect and store the following information in addition to the information detailed in the main Privacy Policy:
+    </p>
+    <ul>
+        <li>
+            <strong>Facebook Token:</strong> When you link your Facebook account to This Application, we store a Facebook token that allows us to access and share your Facebook posts with this App’s users. You can revoke access to your Facebook account from the Admin dashboard within the application. The token is stored securely and is deleted immediately upon revocation of access.
+        </li><br>
+        <li>
+            <strong>YouTube Data:</strong> When you link your YouTube account to This Application, we store a YouTube token that allows us to access your YouTube channel for uploading videos. You can revoke access to your YouTube channel from the Admin dashboard within the application or by revoking consent in Google's security settings at <a href="https://myaccount.google.com/security">Google Security Settings</a>. We also store the video ID created after an upload to display the video to users. If consent is not granted within 30 calendar days, we will delete the link to these videos to comply with YouTube’s privacy policy. By using the YouTube upload feature, you consent to YouTube and its third parties storing, accessing, or collecting information via cookies or similar technology.
+        </li><br>
+        <li>
+            <strong>Uploaded Content:</strong> Any images you upload to the App are stored in Firebase Cloud Storage, provided by Google Firebase. All data is securely stored in Japan, accessible only by authorized users or our application, and is protected by encryption and strict access controls. Content is retained as long as necessary for the purpose it was collected and is deleted upon request.
+        </li><br>
+        <li>
+            <strong>Event Information:</strong> When you create events within the App and link them to external ticket-selling websites, we collect and store event details in Firestore.
+        </li><br>
+        <li>
+            <strong>Email Address:</strong> Your email address is stored when you perform sensitive actions (e.g., connecting a YouTube account, sending an email or notification, posting an event). This information is used to facilitate these actions and ensure security.
+        </li><br>
+        <li>
+            <strong>Communication Content:</strong> We record the content of all communications (emails and notifications) sent from the app. These records are securely stored and used to demonstrate compliance with legal obligations or in case of legal disputes. The data is retained for as long as legally required or until it is no longer needed for this purpose.
+        </li>
+    </ul>
+    <p>
+        You can contact us at any time with questions or complaints about the Application's privacy practices.
+    </p>
+    
+    <h2>Article 3 (Additional permissions requests)</h2>
+    <p>
+        When accessing This Service as an Admin, we may request access to your device’s storage for the file picker functionality, which is used to upload pictures from your gallery to Firebase Cloud Storage and videos to the YouTube channel as mentioned on the upload page. This access is strictly limited to the files you select and is necessary for managing content directly uploaded to the platform through Admin functionalities. No other data from your device's storage is accessed or collected.
+    </p>
+    <p>
+        This access is performed with your explicit consent, which you provide when using the file picker. You may manage or revoke this access at any time through your device settings. Videos uploaded to YouTube are processed according to Google privacy policies and YouTube terms of service, which can be reviewed at <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a> and <a href="http://m.youtube.com/terms">YouTube Terms of Service</a>.
+    </p>
+    <p>
+        Files uploaded to Firebase Cloud Storage are processed according to Google privacy policies and Google Cloud Platform Terms of Service, which can be reviewed at <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://cloud.google.com/terms/">Google Cloud Terms of Service</a>.
+    </p>
+    <p>
+        We implement security measures to protect your content during transfer, including HTTPS encryption and secure API calls, ensuring that your data remains protected during the upload process.
+    </p>
+    
+    <h2>Article 4 (Data Retention)</h2>
+    <p>
+        In compliance with the Act on the Protection of Personal Information (APPI) in Japan, we will retain your Facebook token, YouTube connection data, uploaded content, and other related data only for as long as necessary to provide the services described in this Addendum or as required to fulfill our legal obligations.
+    </p>
+    <ul>
+        <li>
+            <strong>Facebook Token and YouTube Connection Data:</strong> These tokens and associated data are retained strictly for the period during which your account is linked to This Application and for the purposes outlined in this Addendum.
+        </li><br>
+        <li>
+            <strong>Uploaded Content:</strong> Uploaded images, videos, and other content are retained as long as necessary for their intended purpose (e.g., event display or post visibility). Admins can hide a post at any time from within This Application, and can request deletions by contacting us at []. Such requests will be processed promptly in accordance with our data deletion protocols.
+        </li><br>
+        <li>
+            <strong>Email Address and Communication Content:</strong> We retain email addresses and communication content sent from the App as long as needed to fulfill the intended purpose, comply with legal obligations, or resolve disputes.
+        </li><br>
+        <li>
+            <strong>Event Information:</strong> Event details are retained as long as the event is active or until it is deleted by the Admin or upon request.
+        </li><br>
+    </ul>
+    
+    <h2>Article 5 (Your Rights)</h2>
+    <p>
+        Admins have the right to access, correct, or request the deletion of their personal data in accordance with APPI. To exercise these rights or to inquire about our data retention practices, please contact us at [contact information]. We ensure that all deletions are performed securely, and all retained data is protected against unauthorized access, leakage, and loss through robust security measures.
+    </p>
+    
+    <h2>Article 6 (Changes to This Addendum)</h2>
+    <p>
+        We may update this Addendum from time to time to reflect changes in our practices, legal requirements, or for other operational reasons. Any changes will be communicated to you via email, or through other appropriate means. We encourage you to review the updated Addendum carefully.
+    </p>
+    <p>
+        Changes will take effect 30 days after notification unless otherwise specified. Continued use of the application after the effective date of the changes will be considered your acceptance of the updated Addendum. If you do not agree with the new terms, you have the right to request the deletion of your data by contacting us at [contact information].
+    </p>
+    <p>
+        We remain committed to protecting your privacy and will always ensure that any changes align with our obligations under the Act on the Protection of Personal Information (APPI) and other applicable laws.
+    </p>
+    
+    <h2>Article 7 (Contact Information)</h2>
+    <p>
+        If you have any questions, concerns, or requests regarding this Addendum or your personal data, please contact us at <a href="mailto:kelly-official-fan-support@pvp.co.jp">kelly-official-fan-support@pvp.co.jp</a> or at:<br>
+        PVP Inc<br>
+        〒105-0012 東京都港区芝大門2−1−16 ＋SHIFT芝大門 1F<br>
+        Japan.
+    </p>
+  </div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+   // Check if the page is loaded in an iframe
+   if (window.self !== window.top) {
+     // Hide the header if inside an iframe
+     document.getElementById('site-header').style.display = 'none';
+   } else {
+     // Check if the page is accessed via GitHub Pages
+     if (!window.location.href.includes("github.io")) {
+       // Hide the header if not on GitHub Pages
+       document.getElementById('site-header').style.display = 'none';
+     }
+   }
+ });
+ </script>
+</body>
+</html>
